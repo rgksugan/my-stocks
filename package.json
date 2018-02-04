@@ -1,0 +1,17 @@
+{
+  "name": "my-stocks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "google-finance": "^0.1.11",
+    "lodash": "^4.17.4",
+    "yahoo-finance": "^0.3.5"
+  }
+}
