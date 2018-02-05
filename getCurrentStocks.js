@@ -2,7 +2,7 @@ const yahooFinance = require("yahoo-finance");
 const _ = require("lodash");
 const cTable = require("console.table");
 
-const symbols = ['BBTC.NS', 'INFY.NS', 'NH.NS', 'CHENNPETRO.NS', 'INDIGO.NS', 'MRPL.NS', 'SQSBFSI.NS'];
+const symbols = require("./my-stocks.json").symbols;
 
 yahooFinance.quote(
   {
@@ -37,7 +37,6 @@ yahooFinance.quote(
         returnOnAssets,
         price: share.financialData.currentPrice
       });
-
     });
 
     shares = _.chain(shares)
